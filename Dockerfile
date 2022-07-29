@@ -7,6 +7,6 @@ RUN apk add openjdk11 && apk add maven && export PATH=${PATH}:${JAVA_HOME}/bin
 RUN apk add bash && apk add git
 
 # Install Node.js and NPM
-run apt add --update nodejs npm
+run apk add --update nodejs npm
 
 COPY setCredentials.sh /data/setCredentials.sh
